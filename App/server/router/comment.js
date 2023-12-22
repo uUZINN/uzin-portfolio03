@@ -23,17 +23,15 @@ router.post("/submit", async (req, res) => {
     }
 });
 
-router.post("/getComments", async (req, res) => {
-
+router.post("/api/comment/getComments", async (req, res) => {
     try {
         const comments = await Comment.find().exec();
-
         return res.status(200).json({ success: true, comments });
     } catch (err) {
         console.log(err);
         return res.status(400).json({ success: false });
     }
-})
+});
 
 
 router.post("/edit", async (req, res) => {
