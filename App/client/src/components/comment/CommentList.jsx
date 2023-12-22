@@ -9,6 +9,7 @@ const CommentList = () => {
         try {
             if ((await axios.post("/api/comment/getComments")).data.success) {
                 setCommentList([...(await axios.post("/api/comment/getComments")).data.comments]);
+                console.log([...(await axios.post("/api/comment/getComments")).data.comments])
             }
         } catch (error) {
             console.error("댓글 불러오기 실패:", error);
