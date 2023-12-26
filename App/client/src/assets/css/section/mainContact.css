@@ -27,6 +27,7 @@
     margin-bottom: 1rem;
     padding-right: 1rem;
 }
+
 .comment_wrap::-webkit-scrollbar {
     width: 8px;
 }
@@ -50,6 +51,7 @@
     justify-content: flex-end;
     text-align: right;
 }
+
 .comment_wrap>div:nth-child(2n) .comment_cont {
     flex-direction: row-reverse;
 }
@@ -67,7 +69,7 @@
 
 .comment_wrap .text span {
     font-size: 1.1rem;
-
+    line-height: 1.5;
 }
 
 .comment_wrap>div:nth-child(2n) .text span.date {
@@ -84,7 +86,7 @@
 }
 
 .comment_wrap .text>span {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.4rem;
     display: inline-block;
     align-items: flex-end;
 }
@@ -410,33 +412,44 @@
     .cont_title {
         font-size: 15.5vw;
     }
+
     .main_contact {
         padding: 3vw 5vw;
     }
+
     .main_contact div.contact_text {
         width: 50%;
     }
+
     .comment_wrap {
         max-height: 40vh;
         min-height: 40vh;
     }
-    .comment_wrap .text span, .comment_wrap>div:nth-child(2n) .text span {
+
+    .comment_wrap .text span,
+    .comment_wrap>div:nth-child(2n) .text span {
         font-size: 1rem;
     }
-    .comment_wrap .text span.date, .comment_wrap>div:nth-child(2n) .text span.date {
+
+    .comment_wrap .text span.date,
+    .comment_wrap>div:nth-child(2n) .text span.date {
         font-size: 0.7rem;
     }
-    .comment_cont .comment, .comment_wrap>div:nth-child(2n) .comment_cont .comment {
+
+    .comment_cont .comment,
+    .comment_wrap>div:nth-child(2n) .comment_cont .comment {
         padding: 0.7rem 0.9rem 0.6rem;
         font-size: 0.9rem;
     }
+
     .contact_input label input {
         font-size: 1rem;
     }
+
     .contact_input label span {
         font-size: 1rem;
     }
-    
+
     .contact_input button {
         font-size: 2rem;
     }
@@ -510,6 +523,7 @@
         max-height: 62vh;
         min-height: 62vh;
     }
+
     .main_contact div.contact_text {
         width: 100%;
         margin: 7vw 0;
@@ -519,14 +533,17 @@
     .main_contact div.contact_profile {
         width: 100%;
     }
+
     .comment_wrap>div:nth-child(2n) .comment_cont {
         width: auto;
     }
+
     .comment_cont .comment_toggle {
         display: flex;
         position: relative;
         width: fit-content;
     }
+
     .contact_text h4 {
         font-size: 11vw;
         letter-spacing: -0.7vw;
