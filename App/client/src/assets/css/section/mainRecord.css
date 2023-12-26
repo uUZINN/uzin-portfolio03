@@ -274,6 +274,8 @@
     .circle_wrap {
         width: 50%;
         position: sticky;
+        display: flex;
+        align-items: center;
     }
 
     .circle_wrap .pin-spacer {
@@ -336,6 +338,7 @@
         align-items: center;
         flex-direction: column;
         height: 100%;
+        overflow: hidden;
     }
 
     .main_record .circle,
@@ -354,9 +357,12 @@
     }
 
     .circle_wrap {
-        height: 30vh;
+        height: 65vh;
         width: 80%;
         position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .circle_wrap .pin-spacer {
