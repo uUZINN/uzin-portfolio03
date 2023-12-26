@@ -399,4 +399,9 @@
         padding: 2.2vw 0;
         letter-spacing: 0;
     }
+
+    .main_record .work .work_title a:before {
+        font-size: 20vw;
+
+    }
 }
