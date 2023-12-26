@@ -513,6 +513,12 @@
 }
 
 @media(max-width: 650px) {
+    .main_contact div.comment_cont img {
+        height: 20px;
+        width: 5px;
+    }
+
+
     .main_contact {
         padding: 3vw;
         flex-direction: column;
