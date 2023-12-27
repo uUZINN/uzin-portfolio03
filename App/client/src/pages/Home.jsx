@@ -6,17 +6,21 @@ import MainSection03 from '../components/contents/MainSection03'
 import MainSection04 from '../components/contents/MainSection04'
 import MainSection05 from '../components/contents/MainSection05'
 import '../assets/js/main.js';
+import Loading from '../components/header/Loading.jsx'
 
 const Home = () => {
   return (
-    <div id="wrap">
+    <>
+      <Loading />
+      <div id="wrap">
         <Main />
         <MainSection01 />
         <MainSection02 />
         <MainSection03 />
         <MainSection04 />
         <MainSection05 />
-    </div>
+      </div>
+    </>
   )
 }
 

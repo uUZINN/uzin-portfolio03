@@ -1,0 +1,57 @@
+.loader {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transition: all 1s;
+}
+
+.loader-logo-wrap {
+    position: absolute;
+    width: 100%;
+    z-index: 999999999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loader-logo-wrap .main_logo svg {
+    margin-bottom: 0;
+}
+
+.load_grid {
+    position: fixed;
+    height: 100%;
+    background: #192928;
+    z-index: 999999;
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    padding: 0.3rem;
+    flex-wrap: wrap;
+    width: 200%;
+    align-content: center;
+    display: none;
+    transition: all 0.3s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-208%);
+        opacity: 1;
+    }
+}
+
+.load_grid-item {
+    transform-origin: 50% 0%;
+    width: 16.5%;
+    margin: 0.5rem;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+.load_grid-item:nth-child(12) {
+    margin-left: -7.5%;
+}

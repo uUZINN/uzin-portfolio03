@@ -1,3 +1,67 @@
+/* .intro {
+    background: var(--background-col);
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --foreground-col: #DCEA88;
+    --background-col: #192928;
+    z-index: 999999999;
+    background-image: url(../../img/main-min.jpg);
+}
+
+.intro.invert {
+    --foreground-col: #192928;
+    --background-col: #DCEA88;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.intro svg {
+    width: 50vw;
+
+}
+
+#outline {
+    fill: none;
+    stroke: var(--foreground-col);
+    stroke-width: .1px;
+}
+
+#load {
+    fill: var(--foreground-col);
+    stroke-width: 0px;
+    animation: loading 6s linear forwards;
+}
+
+#mask {
+    fill: var(--background-col);
+    stroke-width: 0px;
+} */
+
+@keyframes loading {
+    from {
+        y: 11.5px;
+    }
+
+    to {
+        y: -10px;
+    }
+}
+
+
 .cont_container {
     padding: 2rem;
 }

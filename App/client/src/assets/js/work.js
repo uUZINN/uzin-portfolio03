@@ -5,8 +5,8 @@ export function work() {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.normalizeScroll({
         allowNestedScroll: true
-      });
-    
+    });
+
 
     gsap.to(".parallax__item__bike", {
         xPercent: 130,
@@ -49,6 +49,13 @@ export function work() {
         pin: true,
         anticipatePin: 1,
     });
+
+
+
+
+
+
+
 
     // 전체 배경 변경
     let bg = gsap.timeline({
