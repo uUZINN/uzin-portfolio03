@@ -10,6 +10,8 @@ React, Node.js, Next.js, Vue, Vite, PHP, MySQL, MongoDB, Mongoose, Firebaseì™€ ê
   <a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"></a>
   <a href="#"><img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white"></a>
   <a href="#"><img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=CSS3&logoColor=white"></a>
+  <a href="#"><img alt="GSAP" src="https://img.shields.io/badge/GSAP-0ae448?logo=GSAP&logoColor=white"></a>
+  <a href="#"><img alt="lenis" src="https://img.shields.io/badge/lenis-ff98a2?logo=lenis&logoColor=white"></a>
   <a href="#"><img alt="React" src="https://img.shields.io/badge/React-61DAFB?logo=React&logoColor=white"></a>
   <a href="#"><img alt="Git" src="https://img.shields.io/badge/Git-F05032?logo=Git&logoColor=white"></a>
   <a href="#"><img alt="Heroku" src="https://img.shields.io/badge/Heroku-79589f?logo=Heroku&logoColor=white"></a>
