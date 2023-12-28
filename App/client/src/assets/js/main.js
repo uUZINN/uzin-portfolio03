@@ -8,12 +8,9 @@ import { typing } from "./typing.js";
 
 window.addEventListener("load", function () {
     circle();
-    work();
     link();
+    work();
     typing();
     smooth();
     setFlowBanner();
 })
-// window.addEventListener('load', adjustPosition);
-// window.addEventListener('resize', adjustPosition);
-

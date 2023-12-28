@@ -12,6 +12,22 @@ import mobile02 from '../../assets/img/mobile02.png';
 import macbook from '../../assets/img/Macbook.png';
 
 const MainSection01 = () => {
+
+    window.onload = function () {
+        document.querySelectorAll("a[href^='#']").forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href");
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    };
+
     return (
         <section id="mainSection" className="cont_container">
             <div id="headInfo" className="main_text parallax__item__desc">
@@ -71,7 +87,7 @@ const MainSection01 = () => {
                         <p className="ko">react, vue, vite, next를 이용하여 다양한 버전으로 제작해 본 포트폴리오 사이트 입니다.</p>
                         <div className="work_btn">
                             <Link to="https://vue-project2023.vercel.app/" target="_blank" className="ko">view</Link>
-                            <Link to="https://github.com/uUZINN" target="_blank" className="ko">code</Link>
+                            <Link to="https://github.com/uUZINN/vue-project2023" target="_blank" className="ko">code</Link>
                         </div>
                         <img src={port01} alt="" />
                     </div>

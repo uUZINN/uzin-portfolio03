@@ -51,12 +51,6 @@ export function work() {
     });
 
 
-
-
-
-
-
-
     // 전체 배경 변경
     let bg = gsap.timeline({
         scrollTrigger: {

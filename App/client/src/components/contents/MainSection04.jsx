@@ -108,7 +108,7 @@ const MainSection04 = () => {
                     </div> */}
                 </div>
                 <div className="contact_profile">
-                    <img src={profile} alt="" />
+                    <a href='mailto:dbwls9038@naver.com'><img src={profile} alt="" /></a>
                 </div>
             </div>
         </section>

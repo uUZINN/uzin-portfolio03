@@ -7,11 +7,14 @@ import MainSection04 from '../components/contents/MainSection04'
 import MainSection05 from '../components/contents/MainSection05'
 import '../assets/js/main.js';
 import Loading from '../components/header/Loading.jsx'
+import Skip from '../components/Skip.jsx'
 
 const Home = () => {
   return (
     <>
+      <Skip />
       <Loading />
+
       <div id="wrap">
         <Main />
         <MainSection01 />

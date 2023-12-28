@@ -213,6 +213,16 @@
     border-radius: 20px;
 }
 
+.main_contact div a {
+    display: block;
+    transition: all 0.3s;
+}
+
+.main_contact div a:hover {
+
+    filter: drop-shadow(2px 4px 6px #00000033);
+}
+
 .main_contact div.contact_text {
     width: 45%;
 }
@@ -372,6 +382,12 @@
     line-height: 1.4;
 }
 
+
+.infor_box p.ko a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 .infor_btn {
     display: flex;
     flex-direction: row;
@@ -386,6 +402,13 @@
     letter-spacing: -0.07vw;
     border-bottom: 2px solid var(--subBg-color);
     color: var(--subBg-color);
+    transition: all 0.3s;
+}
+
+.infor_btn a:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+
 }
 
 .infor_right {
