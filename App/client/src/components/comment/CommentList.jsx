@@ -2,9 +2,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import CommentContent from './CommentContent';
 import axios from 'axios';
 
-const CommentList = () => {
+const CommentList = ({ fetchData }) => {
     const [commentList, setCommentList] = useState([]);
     const commentWrapRef = useRef(null);
+    const [shouldAdjustScroll, setShouldAdjustScroll] = useState(true);
+
 
     async function fetchData() {
         try {
@@ -19,20 +21,38 @@ const CommentList = () => {
 
     useEffect(() => {
         fetchData();
-
-        const intervalId = setInterval(fetchData, 4000);
-        return () => clearInterval(intervalId);
-    }, []);
+    }, [fetchData]);
 
     useEffect(() => {
-        // 최신 댓글이 업데이트되면 스크롤을 조정
-        if (commentWrapRef.current) {
+        if (shouldAdjustScroll && commentList.length > 0 && commentWrapRef.current) {
             commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
+            setShouldAdjustScroll(false);
         }
-    }, [commentList]);
+    }, [commentList, shouldAdjustScroll]);
+
+    // useEffect(() => {
+    //     fetchData();
+
+    //     // const intervalId = setInterval(fetchData, 4000);
+    //     // return () => clearInterval(intervalId);
+
+    // }, []);
+
+    // useEffect(() => {
+    //     // 최신 댓글이 업데이트되면 스크롤을 조정
+    //     if (commentWrapRef.current) {
+    //         commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
+    //     }
+    // }, [commentList]);
+
+
 
     return (
-        <div ref={commentWrapRef} className="comment_wrap" style={{ overflowY: 'auto', maxHeight: '400px' }}>
+        <div
+            ref={commentWrapRef}
+            className="comment_wrap"
+            style={{ overflowY: 'auto', maxHeight: '400px' }}
+        >
             {commentList.map((comment, index) => {
                 return (
                     <CommentContent key={comment.id} comment={comment} />

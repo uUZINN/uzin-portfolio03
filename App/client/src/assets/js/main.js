@@ -7,10 +7,12 @@ import { typing } from "./typing.js";
 
 
 window.addEventListener("load", function () {
-    circle();
-    link();
-    work();
-    typing();
+
     smooth();
     setFlowBanner();
+    link();
+    work();
+    circle();
+    typing();
+
 })

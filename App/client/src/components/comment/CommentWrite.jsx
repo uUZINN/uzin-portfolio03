@@ -6,8 +6,6 @@ const CommentWrite = () => {
     const [nickName, setNickName] = useState("");
     const [password, setPassword] = useState("");
 
-
-
     const SubmitHandler = (e) => {
         e.preventDefault();
 
@@ -15,29 +13,34 @@ const CommentWrite = () => {
             return alert("이름, 비밀번호, 내용을 모두 적어주세요✨");
         }
 
+
         let body = {
             comment: comment,
             nickName: nickName,
             password: password
         }
 
-        
-        axios.post("/api/comment/submit", body).then((response) => {
-            if (response.data.success) {
-                response.data.comment = comment;
-                console.log(comment)
-                
-                alert("소중한 댓글 감사합니다! 😎")
-                //window.location.reload();
 
-                
-                setComment('');
-                setNickName('');
-                setPassword('');
-            } else {
-                alert("댓글 작성 실패!!!!")
-            }
-        })
+        axios.post("/api/comment/submit", body)
+            .then((response) => {
+                if (response.data.success) {
+                    response.data.comment = comment;
+                    console.log(comment)
+
+                    alert("소중한 댓글 감사합니다! 😎")
+                    setComment('');
+                    setNickName('');
+                    setPassword('');
+
+
+                } else {
+                    alert("댓글 작성 실패b")
+                }
+            })
+            .catch((error) => {
+                console.error("댓글 작성 실패:", error);
+                alert("댓글 작성 실패!!!!");
+            });
     }
 
     return (
@@ -71,11 +74,11 @@ const CommentWrite = () => {
                 />
                 <span>03</span>
             </label>
-            <button 
-            onClick={(e) => { 
-                SubmitHandler(e)
+            <button
+                onClick={(e) => {
+                    SubmitHandler(e)
                 }}>
-                    SEND IT!
+                SEND IT!
             </button>
         </div>
     )
