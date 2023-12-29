@@ -47,6 +47,7 @@ const CommentList = ({ fetchData }) => {
             }
         };
     }, []);
+
     useEffect(() => {
         if (shouldAdjustScroll && commentList.length > 0 && commentWrapRef.current) {
             commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
@@ -60,6 +61,12 @@ const CommentList = ({ fetchData }) => {
         }
     }, [commentList, shouldAdjustScroll, isUserScrolling]);
 
+    useEffect(() => {
+        if (shouldAdjustScroll && commentList.length > 0 && commentWrapRef.current) {
+            commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
+            setShouldAdjustScroll(false);
+        }
+    }, [commentList.length, shouldAdjustScroll]);
 
 
     // useEffect(() => {
@@ -70,11 +77,11 @@ const CommentList = ({ fetchData }) => {
 
     // }, []);
 
-    useEffect(() => {
-        if (!isUserScrolling && commentWrapRef.current) {
-            commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
-        }
-    }, [commentList, isUserScrolling]);
+    // useEffect(() => {
+    //     if (!isUserScrolling && commentWrapRef.current) {
+    //         commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
+    //     }
+    // }, [commentList, isUserScrolling]);
 
 
 

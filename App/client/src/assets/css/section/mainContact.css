@@ -47,7 +47,7 @@
 }
 
 .comment_wrap>div:nth-child(2n) {
-    display: flex;
+    /* display: flex; */
     justify-content: flex-end;
     text-align: right;
 }
