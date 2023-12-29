@@ -6,6 +6,7 @@ const CommentList = ({ fetchData }) => {
     const [commentList, setCommentList] = useState([]);
     const commentWrapRef = useRef(null);
     const [shouldAdjustScroll, setShouldAdjustScroll] = useState(true);
+    const [isUserScrolling, setIsUserScrolling] = useState(false);
 
 
     async function fetchData() {
@@ -24,11 +25,42 @@ const CommentList = ({ fetchData }) => {
     }, [fetchData]);
 
     useEffect(() => {
+        const handleScroll = () => {
+            setIsUserScrolling(true);
+        };
+
+        const handleScrollEnd = () => {
+            setIsUserScrolling(false);
+        };
+
+        if (commentWrapRef.current) {
+            commentWrapRef.current.addEventListener('scroll', handleScroll);
+
+            // 스크롤 종료 후 상태 업데이트
+            commentWrapRef.current.addEventListener('scroll', handleScrollEnd);
+        }
+
+        return () => {
+            if (commentWrapRef.current) {
+                commentWrapRef.current.removeEventListener('scroll', handleScroll);
+                commentWrapRef.current.removeEventListener('scroll', handleScrollEnd);
+            }
+        };
+    }, []);
+    useEffect(() => {
         if (shouldAdjustScroll && commentList.length > 0 && commentWrapRef.current) {
             commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
             setShouldAdjustScroll(false);
         }
-    }, [commentList, shouldAdjustScroll]);
+
+        if (isUserScrolling) {
+            // 사용자가 스크롤을 조작 중이면 포커스 설정 해제
+            commentWrapRef.current.blur();
+            setIsUserScrolling(false);
+        }
+    }, [commentList, shouldAdjustScroll, isUserScrolling]);
+
+
 
     // useEffect(() => {
     //     fetchData();
@@ -38,12 +70,11 @@ const CommentList = ({ fetchData }) => {
 
     // }, []);
 
-    // useEffect(() => {
-    //     // 최신 댓글이 업데이트되면 스크롤을 조정
-    //     if (commentWrapRef.current) {
-    //         commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
-    //     }
-    // }, [commentList]);
+    useEffect(() => {
+        if (!isUserScrolling && commentWrapRef.current) {
+            commentWrapRef.current.scrollTo({ top: commentWrapRef.current.scrollHeight, behavior: 'smooth' });
+        }
+    }, [commentList, isUserScrolling]);
 
 
 

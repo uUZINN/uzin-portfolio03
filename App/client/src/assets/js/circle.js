@@ -22,22 +22,6 @@ export function circle() {
     const masterTimeline2 = gsap.timeline();
     masterTimeline2.add(ani5, 0).add(ani6, 0);
 
-    // const greenDisappear = gsap.timeline({ paused: true });
-    // greenDisappear.to('.circle', { opacity: 0, duration: 10 });
-
-    // const blueDisappear = gsap.timeline({ paused: true });
-    // blueDisappear.to('.blue_circle', { opacity: 0, duration: 10 });
-
-    // const showBlue = () => {
-    //     gsap.to('.blue_circle', { opacity: 1, duration: 10 });
-    //     gsap.to('.circle', { opacity: 0, duration: 10 });
-    // };
-
-    // const showGreen = () => {
-    //     gsap.to('.circle', { opacity: 1, duration: 10 });
-    //     gsap.to('.blue_circle', { opacity: 0, duration: 10 });
-    // };
-
 
     ScrollTrigger.create({
         animation: masterTimeline,
