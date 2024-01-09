@@ -9,7 +9,7 @@ const MainHeader = () => {
   return (
     <div>
       <div class="main_header">
-        <div>
+        {/* <div>
         <Burger openMenu={() => {setMenuIsOpen(true)}}/>
         </div>
        
@@ -20,19 +20,19 @@ const MainHeader = () => {
                 <Menu closeMenu={() => {setMenuIsOpen(false)}}/>
                 </>
             }
-        </AnimatePresence>
-        {/* <a href="#headInfo">
+        </AnimatePresence> */}
+        <a href="#headInfo">
           <span class="ko">Introduce</span>
           INFO
-        </a>  */}
+        </a>
         <p>AVAILABLE FOR COMMISSIONS 2024</p>
         <a href="#headWork">
           <span class="ko">Portfolio</span>
           WORK
         </a>
-      </div>  
+      </div>
     </div>
-    
+
   )
 }
 
