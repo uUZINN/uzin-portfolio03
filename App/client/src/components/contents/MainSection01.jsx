@@ -142,12 +142,12 @@ const MainSection01 = () => {
                 <div className="bike_text ko">
                     <p className='split'>
                         <em>FIRST. </em>
-                        퍼블리셔로 시작한 경험은 지금의 개발자로서 제 강점이 되었습니다.
+                        퍼블리셔로 시작한 경험은 지금의 개발자로서 제 강점이 되었습니다.<br />
                         디자인의 의도를 이해하고, 그것을 섬세하게 구현해내는 과정에 익숙합니다.
                     </p>
                     <p className='split'>
                         <em>SECOND. </em>
-                        HTML과 CSS로 시작해 JavaScript, Liquid, GraphQL까지
+                        HTML과 CSS로 시작해 JavaScript, Liquid, GraphQL까지<br />
                         경험을 넓혀가며, 표현과 로직을 모두 이해하는 개발자로 성장하고 있습니다.
                     </p>
                 </div>
