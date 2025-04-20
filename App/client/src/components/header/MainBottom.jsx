@@ -22,7 +22,7 @@ const MainBottom = () => {
             </div>
             <div className="main_bottom02">
                 <div className="main_bottom02_title">
-                    <p>INNOVATE CODE IN 2024.</p>
+                    <p>INNOVATE CODE IN 2025.</p>
                     <ul>
                         <li><Link to="https://uzin-portfolio.kro.kr/">website</Link></li>
                         <li><Link to="https://github.com/uUZINN/uzin-portfolio03">interface</Link></li>

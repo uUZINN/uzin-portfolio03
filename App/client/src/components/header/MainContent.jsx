@@ -9,7 +9,7 @@ const MainContent = () => {
         </svg>
       </h1>
 
-      <p className="en">uzin's portfolio</p>
+      <p className="en">Portfolio of Euzin</p>
     </div>
   )
 }

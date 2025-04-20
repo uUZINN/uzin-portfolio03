@@ -8,7 +8,7 @@ const MainSection05 = () => {
         <section id="mainSection" className="cont_container">
             <h3 className="cont_title">Please get in touch!</h3>
             <p className="cont_ment">I'm always here, waiting.</p>
-            <p className="cont_ment en">by Youzin</p>
+            <p className="cont_ment en">by Euzin</p>
             <div className="infor_cont">
                 <div className="infor_box">
                     <div className="infor_title">
@@ -24,7 +24,7 @@ const MainSection05 = () => {
                         GITHUB. <a href="https://github.com/uUZINN">https://github.com/uUZINN</a>
                     </p>
                     <div className="infor_btn">
-                        <p className="en2">I can't wait to hear from you</p>
+                        <p className="en2">I'd love to connect.</p>
                         <Link to="mailto:dbwls9038@naver.com">Send email</Link>
                     </div>
                 </div>

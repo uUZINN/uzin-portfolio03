@@ -17,7 +17,7 @@ const MainSection02 = () => {
                         AND DEVELOPMENT TAILORED
                         FOR EXPANDING WEBSITES.
                     </h3>
-                    <p className="en">Uzin Developer</p>
+                    <p className="en">Developer Euzin</p>
                 </div>
                 <div className="career_second parallax__item__desc">
                     <div className="career_cont">
@@ -40,17 +40,17 @@ const MainSection02 = () => {
                             <div className="stack">
                                 <h4>my technical stack</h4>
                                 <ul className="ko">
-                                    <li>JAVASCRIPT&nbsp;&nbsp;&nbsp;JQUERY&nbsp;&nbsp;&nbsp;REACT&nbsp;&nbsp;&nbsp;VUE&nbsp;&nbsp;&nbsp;VITE&nbsp;&nbsp;&nbsp;NEXT.JS
+                                    <li>JAVASCRIPT&nbsp;&nbsp;&nbsp;JQUERY&nbsp;&nbsp;&nbsp;REACT&nbsp;&nbsp;&nbsp;LIQUID&nbsp;&nbsp;&nbsp;GRAPHQL
                                     </li>
                                     <li>HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;SCSS</li>
                                     <li>PHOTOSHOP&nbsp;&nbsp;&nbsp;ILLUSTRATER&nbsp;&nbsp;&nbsp;ADOBE
                                         XD&nbsp;&nbsp;&nbsp;FIGMA</li>
                                     <li>MONGODB&nbsp;&nbsp;&nbsp;MONGOOSE&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;&nbsp;PHPMYADMIN
                                     </li>
-                                    <li>GIT&nbsp;&nbsp;&nbsp;GITHUB</li>
+                                    <li>GIT&nbsp;&nbsp;&nbsp;GITHUB&nbsp;&nbsp;&nbsp;GITLAB</li>
                                     <li>FILEZILLA&nbsp;&nbsp;&nbsp;NETLIFY</li>
                                     <li>POSTMAN&nbsp;&nbsp;&nbsp;VS
-                                        CODE&nbsp;&nbsp;&nbsp;GNUBOARD&nbsp;&nbsp;&nbsp;CAFE24</li>
+                                        CODE&nbsp;&nbsp;&nbsp;GNUBOARD&nbsp;&nbsp;&nbsp;CAFE24&nbsp;&nbsp;&nbsp;SHOPIFY</li>
                                 </ul>
                             </div>
                             <div className="career">
@@ -59,18 +59,18 @@ const MainSection02 = () => {
                                     <li>한양여자대학교 - 니트패션디자인과 전공 <span>2017.02 ~ 2020.02 (졸업)</span></li>
                                     <li>대한섬유 - 니트 프로그래머 <span>2020.01 ~ 2020.07 (7개월)</span></li>
                                     <li>라인컴퓨터아트학원 - 웹 퍼블리셔디자인 수료 <span>2020.08 ~ 2021.01 (졸업)</span></li>
-                                    <li>그리다인 - 웹 퍼블리셔 <span>2021.05 ~ 2023.07 (2년)</span></li>
-                                    <li>라인컴퓨터아트학원 - 프론트앤드 개발 수료 <span>2023.08 ~ 2024.01 (졸업예정)</span></li>
-                                    <li>I am waiting for your company</li>
-                                    <li>to fill this next position.</li>
+                                    <li>그리다인 - [사원] 웹 퍼블리셔 <span>2021.05 ~ 2023.07 (2년)</span></li>
+                                    <li>라인컴퓨터아트학원 - 프론트앤드 개발 수료 <span>2023.08 ~ 2024.01 (졸업)</span></li>
+                                    <li>솔루게이트 - [대리] 프론트엔드 개발자 <span>2024.03 ~ (재직중)</span></li>
+                                    <li>Waiting for the next job</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="career_text ko">
-                    매력적인 프론트엔드는 사용자들의 경험을 개선하며 직관적이고 시각적으로 매력있는 인터페이스를 제공하는 것입니다.<br />
-                    I will become an appealing frontend developer.
+                    Eleganza nella forma. Precisione nella funzione.<br />
+                    (Finesse in form. Precision in function.)
                 </div>
             </div>
             {/* <!-- // main_career --> */}

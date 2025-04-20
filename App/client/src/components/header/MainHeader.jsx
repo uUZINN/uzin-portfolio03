@@ -25,7 +25,7 @@ const MainHeader = () => {
           <span class="ko">Introduce</span>
           INFO
         </a>
-        <p>AVAILABLE FOR COMMISSIONS 2024</p>
+        <p>AVAILABLE FOR COMMISSIONS 2025</p>
         <a href="#headWork">
           <span class="ko">Portfolio</span>
           WORK

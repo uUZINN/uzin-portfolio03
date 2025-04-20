@@ -38,9 +38,9 @@ const MainSection01 = () => {
                     <span className="reveal reveal_BTT split" data-delay="0.7">AND GROWING!</span>
                 </h3>
                 <p className="ko">
-                    안녕하세요. 개발과 지식의 성장을 즐기는 개발자 정유진 입니다. <br />
-                    2021년 1월에 UIUX 웹 퍼블리싱 교육을 수료하여, 2년 동안 퍼블리셔로 근무하였습니다. <br />
-                    이후 2023년 1월, 프론트엔드 개발 교육을 수료하였습니다.
+                    안녕하세요.<br />
+                    UI/UX 퍼블리셔로 시작해, 현재는 프론트엔드 개발자로 일하고 있습니다.<br />
+                    3년 넘게 웹 프론트 영역에서 일하며, 효율적인 인터페이스 개발에 집중하고 있습니다.
                 </p>
             </div>
             {/* <!-- // main_text --> */}
@@ -62,14 +62,14 @@ const MainSection01 = () => {
                     </ul>
                 </div>
                 <div className="intro_text">
-                    <h3>v2.0(2K24)</h3>
-                    <p className="en">by Youzin</p>
+                    <h3>v2.1(2K25)</h3>
+                    <p className="en">by Euzin</p>
                     <p className="ko">
-                        웹 언어에 첫 발을 들인 순간부터 현재까지, 시간 공백없이 배움의 시간을 가졌습니다.<br />
-                        그만큼 프론트엔드 개발에 열정을 가지고 있으며, 사용자들에게 최고의 경험을 제공하기 위해<br />
-                        기술적으로 성장하고, 협업을 통해 사용자에게 친화적인 솔루션을 만들어내는 것이 목표입니다.<br />
-                        지속적인 학습과 발전으로 프론트엔드 개발자가 되어, 사람들의 삶을 더 나은 방향으로 이끌어가는데 기여하고 싶습니다.<br />
-                        함께 일하고 성장하는 기회를 갖기를 간절히 기대하고 있습니다.
+                        퍼블리셔로 시작해 프론트엔드 개발자로 커리어를 이어온 지 4년 차에 접어들었습니다.<br />
+                        이제는 단순히 구현을 넘어서, 유지보수성과 사용자 흐름까지 고려하며 개발하려고 노력합니다.<br />
+                        기획자·디자이너·백엔드 개발자와의 소통도 더 능숙해졌고, 협업 과정의 중요성을 매일 체감하고 있습니다.<br />
+                        앞으로도 깊이 있는 기술 역량을 쌓고, 팀에 안정감 있는 구성원으로 기여하고 싶습니다.<br />
+                        “Still learning. Still building. Always improving.”
                     </p>
                     <div className="ko add_text">
                         TAILORED HIGH-QUALITY WEB DEVELOPER
@@ -142,13 +142,13 @@ const MainSection01 = () => {
                 <div className="bike_text ko">
                     <p className='split'>
                         <em>FIRST. </em>
-                        시대별로 유행을 타지 않고 꾸준히 사랑받는 패션이 있는 것처럼, 세월이 흘러도 사람들이
-                        불편함 없이 즐겨 사용할 수 있는 사이트를 만들어내는 개발자가 되기 위해 항상 달려나가겠습니다.
+                        퍼블리셔로 시작한 경험은 지금의 개발자로서 제 강점이 되었습니다.
+                        디자인의 의도를 이해하고, 그것을 섬세하게 구현해내는 과정에 익숙합니다.
                     </p>
                     <p className='split'>
                         <em>SECOND. </em>
-                        사용자 경험을 개선하는데 열정을 가지고 있으며, 협업과 지속적인
-                        성장을 통해 노력으로 발전하는 프론트앤드 개발자로 성장하겠습니다.
+                        HTML과 CSS로 시작해 JavaScript, Liquid, GraphQL까지
+                        경험을 넓혀가며, 표현과 로직을 모두 이해하는 개발자로 성장하고 있습니다.
                     </p>
                 </div>
                 <div className="bike_cont">
