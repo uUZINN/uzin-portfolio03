@@ -83,54 +83,63 @@ const MainSection01 = () => {
                 <h3>work</h3>
                 <div className="work_port">
                     <div className="work s1">
-                        <h4>vue - portfolio site</h4>
-                        <p className="ko">react, vue, vite, next를 이용하여 다양한 버전으로 제작해 본 포트폴리오 사이트 입니다.</p>
+                        <h4>shopify - lewkin</h4>
+                        <p className="ko">
+                            쇼핑몰(EN, AU, UK, EU, CA, HK, JP, SG) 8개국 프론트 리뉴얼 개발 - [현재 gl(글로벌) 통합 운영을 위한 개발 및 유지보수 진행 중]<br />
+                            <em>“ TOOL : Shopify Liquid, GraphQL, Figma / 3인 구성 / 프론트엔드 전반 담당 및 유지보수 리드 (기여도 40%) ”</em>
+                        </p>
                         <div className="work_btn">
-                            <Link to="https://vue-project2023.vercel.app/" target="_blank" className="ko">view</Link>
-                            <Link to="https://github.com/uUZINN/vue-project2023" target="_blank" className="ko">code</Link>
+                            <Link to="https://lewkin.com/" target="_blank" className="ko">view</Link>
+                            {/* <Link to="https://github.com/uUZINN/vue-project2023" target="_blank" className="ko">code</Link> */}
                         </div>
                         <img src={port01} alt="" />
                     </div>
                     <div className="work s2">
-                        <h4>teamwork - go!gyobok site</h4>
+                        <h4>shopify - coway</h4>
                         <p className="ko">
-                            php를 이용하여 게시판, 회원가입, 로그인 등 기본적인 기능을 구현하여 제작한 고등학교 교복 소개 사이트 입니다.
-                            <em>Headcount : 4 members / Timeline : 3 weeks</em>
+                            Coway Water purifier Maintenance service - [GSAP 플러그인을 사용한 반응형 스크롤 트리거 애니메이션 적용]
+                            <em>“ TOOL : Shopify Liquid, Jquery(GSAP), Photoshop / 1인 구성 / Web Development & Animation (기여도 100%) ”</em>
                         </p>
                         <div className="work_btn">
-                            <Link to="http://dbwls8751.dothome.co.kr/blog_php/main/main.php" target="_blank"
+                            <Link to="https://coway-maintenance.myshopify.com/" target="_blank"
                                 className="ko">view</Link>
-                            <Link to="https://github.com/uUZINN/gogyobok-blogSite" target="_blank" className="ko">code</Link>
+                            {/* <Link to="https://github.com/uUZINN/gogyobok-blogSite" target="_blank" className="ko">code</Link> */}
                         </div>
                         <img src={port02} alt="" />
                     </div>
                     <div className="work s3">
-                        <h4>vue - movideo</h4>
-                        <p className="ko">vue와 tmdb의 api를 활용하여 최신 영화 정보를 제공하는 사이트를 제작하였습니다.</p>
+                        <h4>shopify - kim’s hardware</h4>
+                        <p className="ko">
+                            Global Store - [프론트엔드 구조 개선을 포함한 페이지 개발 및 퍼포먼스 향상 작업]
+                            <em>“ TOOL : Shopify Liquid / 2인 구성 / 업무 보조 및 상품 필터 기능 보수 작업 (기여도 30%) ”</em>
+                        </p>
                         <div className="work_btn">
-                            <Link to="https://vue-movie-project2024.netlify.app/" target="_blank" className="ko">view</Link>
-                            <Link to="https://github.com/uUZINN/movie-project" target="_blank" className="ko">code</Link>
+                            <Link to="https://kimshardware.com/" target="_blank" className="ko">view</Link>
+                            {/* <Link to="https://github.com/uUZINN/movie-project" target="_blank" className="ko">code</Link> */}
                         </div>
                         <img src={port03} alt="" />
                     </div>
                     <div className="work s4">
-                        <h4>react - fashion youtube</h4>
-                        <p className="ko">리액트를 이용하여 패션관련 유튜브 영상만 모아볼 수 있는 사이트를 제작하였습니다.</p>
+                        <h4>shopify - shopigate</h4>
+                        <p className="ko">
+                            기업 패밀리 홈페이지 리뉴얼 - [테마 기획 및 선정 ~ 전 페이지 구축·개발]
+                            <em>“ TOOL : Shopify Liquid / 1인 구성 / end to end (기여도 100%) ”</em>
+                        </p>
                         <div className="work_btn">
-                            <Link to="https://youtube-project2023.netlify.app/" target="_blank" className="ko">view</Link>
-                            <Link to="https://github.com/uUZINN/youtube-project" target="_blank" className="ko">code</Link>
+                            <Link to="https://shopigate.co.kr/" target="_blank" className="ko">view</Link>
+                            {/* <Link to="https://github.com/uUZINN/youtube-project" target="_blank" className="ko">code</Link> */}
                         </div>
                         <img src={port04} alt="" />
                     </div>
                     <div className="work s5">
-                        <h4>teamwork - Dating Simulation</h4>
+                        <h4>hardcoding - solunote</h4>
                         <p className="ko">
-                            자바스크립트를 이용하여 웹툰을 소재로 연애 시뮬레이션 게임을 제작하였습니다.
-                            <em>Headcount : 3 members / Timeline : 2 weeks</em>
+                            B2B 커머스 자체개발 솔루션 - [전체 페이지 퍼블리싱 신규 구축 및 구조 설계]
+                            <em>“ TOOL : html, css, javascript, jquery / 1인 구성 / 퍼블리싱 단독 수행 (기여도 100%) ”</em>
                         </p>
                         <div className="work_btn">
-                            <Link to="https://uuzinn.github.io/dating-quizSite/" target="_blank" className="ko">view</Link>
-                            <Link to="https://github.com/uUZINN/dating-quizSite" target="_blank" className="ko">code</Link>
+                            <Link to="http://solugate.com/solutions/solutions_solunote" target="_blank" className="ko">기업용 서비스이며, 관련 소개 페이지로 이동됩니다.</Link>
+                            {/* <Link to="https://github.com/uUZINN/dating-quizSite" target="_blank" className="ko">code</Link> */}
                         </div>
                         <img src={port05} alt="" />
                     </div>
