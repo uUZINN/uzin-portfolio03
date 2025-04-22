@@ -84,64 +84,113 @@ const MainSection01 = () => {
                 <div className="work_port">
                     <div className="work s1">
                         <h4>shopify - lewkin</h4>
-                        <p className="ko">
-                            쇼핑몰(EN, AU, UK, EU, CA, HK, JP, SG) 8개국 프론트 리뉴얼 개발 - [현재 gl(글로벌) 통합 운영을 위한 개발 및 유지보수 진행 중]<br />
-                            <em>“ TOOL : Shopify Liquid, GraphQL, Figma / 3인 구성 / 프론트엔드 전반 담당 및 유지보수 리드 (기여도 40%) ”</em>
-                        </p>
-                        <div className="work_btn">
-                            <Link to="https://lewkin.com/" target="_blank" className="ko">view</Link>
-                            {/* <Link to="https://github.com/uUZINN/vue-project2023" target="_blank" className="ko">code</Link> */}
+                        <div className="work_desc">
+                            <div className="work_txt">
+                                <p className="ko">
+                                    쇼핑몰(EN, AU, UK, EU, CA, HK, JP, SG) 8개국 프론트 리뉴얼 개발<br />
+                                    [현재 gl(글로벌) 통합 운영을 위한 개발 및 유지보수 진행 중]
+                                    <em>
+                                        · TOOL : Shopify Storefront API, GraphQL, JavaScript, Liquid, Figma<br />
+                                        · 카트 업데이트 이벤트 감지 후 API 호출을 통한 UI 상태 동기화<br />
+                                        · 국가 및 통화 기반 로직 처리 (localization)<br />
+                                        · 메타필드 기반 조건부 UI 렌더링<br />
+                                        · 프론트엔드 전반 담당 및 유지보수 리드<br />
+                                        · 3인 구성 / 기여도 40%
+                                    </em>
+                                </p>
+                                <div className="work_btn">
+                                    <Link to="https://lewkin.com/" target="_blank" className="ko">view site</Link>
+                                    {/* <Link to="https://github.com/uUZINN/vue-project2023" target="_blank" className="ko">code</Link> */}
+                                </div>
+                            </div>
+                            <img src={port01} alt="" />
                         </div>
-                        <img src={port01} alt="" />
                     </div>
                     <div className="work s2">
                         <h4>shopify - coway</h4>
-                        <p className="ko">
-                            Coway Water purifier Maintenance service - [GSAP 플러그인을 사용한 반응형 스크롤 트리거 애니메이션 적용]
-                            <em>“ TOOL : Shopify Liquid, Jquery(GSAP), Photoshop / 1인 구성 / Web Development & Animation (기여도 100%) ”</em>
-                        </p>
-                        <div className="work_btn">
-                            <Link to="https://coway-maintenance.myshopify.com/" target="_blank"
-                                className="ko">view</Link>
-                            {/* <Link to="https://github.com/uUZINN/gogyobok-blogSite" target="_blank" className="ko">code</Link> */}
+                        <div className="work_desc">
+                            <div className="work_txt">
+                                <p className="ko">
+                                    Coway Water purifier Maintenance service<br />
+                                    [GSAP 플러그인을 사용한 반응형 스크롤 트리거 애니메이션 적용]
+                                    <em>
+                                        · TOOL : Shopify Liquid, Jquery(GSAP), Photoshop<br />
+                                        · Web Development & Animation<br />
+                                        · 1인 구성 / 기여도 100%
+                                    </em>
+                                </p>
+                                <div className="work_btn">
+                                    <Link to="https://coway-maintenance.myshopify.com/" target="_blank"
+                                        className="ko">view site</Link>
+                                    {/* <Link to="https://github.com/uUZINN/gogyobok-blogSite" target="_blank" className="ko">code</Link> */}
+                                </div>
+                            </div>
+                            <img src={port02} alt="" />
                         </div>
-                        <img src={port02} alt="" />
                     </div>
                     <div className="work s3">
                         <h4>shopify - kim’s hardware</h4>
-                        <p className="ko">
-                            Global Store - [프론트엔드 구조 개선을 포함한 페이지 개발 및 퍼포먼스 향상 작업]
-                            <em>“ TOOL : Shopify Liquid / 2인 구성 / 업무 보조 및 상품 필터 기능 보수 작업 (기여도 30%) ”</em>
-                        </p>
-                        <div className="work_btn">
-                            <Link to="https://kimshardware.com/" target="_blank" className="ko">view</Link>
-                            {/* <Link to="https://github.com/uUZINN/movie-project" target="_blank" className="ko">code</Link> */}
+                        <div className="work_desc">
+                            <div className="work_txt">
+                                <p className="ko">
+                                    Global Store<br />
+                                    [프론트엔드 구조 개선을 포함한 페이지 개발 및 퍼포먼스 향상 작업]
+                                    <em>
+                                        · TOOL : Shopify Liquid<br />
+                                        · 업무 보조 및 상품 필터 기능 보수 작업<br />
+                                        · 2인 구성 / 기여도 30%
+                                    </em>
+                                </p>
+                                <div className="work_btn">
+                                    <Link to="https://kimshardware.com/" target="_blank" className="ko">view site</Link>
+                                    {/* <Link to="https://github.com/uUZINN/movie-project" target="_blank" className="ko">code</Link> */}
+                                </div>
+                            </div>
+                            <img src={port03} alt="" />
                         </div>
-                        <img src={port03} alt="" />
                     </div>
                     <div className="work s4">
                         <h4>shopify - shopigate</h4>
-                        <p className="ko">
-                            기업 패밀리 홈페이지 리뉴얼 - [테마 기획 및 선정 ~ 전 페이지 구축·개발]
-                            <em>“ TOOL : Shopify Liquid / 1인 구성 / end to end (기여도 100%) ”</em>
-                        </p>
-                        <div className="work_btn">
-                            <Link to="https://shopigate.co.kr/" target="_blank" className="ko">view</Link>
-                            {/* <Link to="https://github.com/uUZINN/youtube-project" target="_blank" className="ko">code</Link> */}
+                        <div className="work_desc">
+                            <div className="work_txt">
+                                <p className="ko">
+                                    기업 패밀리 홈페이지 리뉴얼<br />
+                                    [테마 기획 및 선정 ~ 전 페이지 구축·개발]
+                                    <em>
+                                        · TOOL : Shopify Storefront API, GraphQL, JavaScript, Liquid<br />
+                                        · GraphQL 쿼리 설계, API 응답 처리 및 캐싱, 동적 렌더링 처리<br />
+                                        · 1인 구성 / 기여도 100%
+                                    </em>
+                                </p>
+                                <div className="work_btn">
+                                    <Link to="https://shopigate.co.kr/" target="_blank" className="ko">view</Link>
+                                    {/* <Link to="https://github.com/uUZINN/youtube-project" target="_blank" className="ko">code</Link> */}
+                                </div>
+                            </div>
+                            <img src={port04} alt="" />
                         </div>
-                        <img src={port04} alt="" />
                     </div>
                     <div className="work s5">
                         <h4>hardcoding - solunote</h4>
-                        <p className="ko">
-                            B2B 커머스 자체개발 솔루션 - [전체 페이지 퍼블리싱 신규 구축 및 구조 설계]
-                            <em>“ TOOL : html, css, javascript, jquery / 1인 구성 / 퍼블리싱 단독 수행 (기여도 100%) ”</em>
-                        </p>
-                        <div className="work_btn">
-                            <Link to="http://solugate.com/solutions/solutions_solunote" target="_blank" className="ko">기업용 서비스이며, 관련 소개 페이지로 이동됩니다.</Link>
-                            {/* <Link to="https://github.com/uUZINN/dating-quizSite" target="_blank" className="ko">code</Link> */}
+                        <div className="work_desc">
+                            <div className="work_txt">
+                                <p className="ko">
+                                    B2B 커머스 자체개발 솔루션<br />
+                                    [전체 페이지 퍼블리싱 신규 구축 및 구조 설계]
+                                    <em>
+                                        · TOOL : html, css, javascript, jquery<br />
+                                        · 탭, 모달, 페이지 전환 등 인터랙션 전반 구현<br />
+                                        · 퍼블리싱 단독 수행<br />
+                                        · 1인 구성 / 기여도 100%
+                                    </em>
+                                </p>
+                                <div className="work_btn">
+                                    <Link to="http://solugate.com/solutions/solutions_solunote" target="_blank" className="ko">기업용 서비스이며, 관련 소개 페이지로 이동됩니다.</Link>
+                                    {/* <Link to="https://github.com/uUZINN/dating-quizSite" target="_blank" className="ko">code</Link> */}
+                                </div>
+                            </div>
+                            <img src={port05} alt="" />
                         </div>
-                        <img src={port05} alt="" />
                     </div>
                 </div>
             </div>
