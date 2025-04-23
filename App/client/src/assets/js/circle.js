@@ -67,4 +67,17 @@ export function circle() {
             gsap.to('.blue_circle', { opacity: 0, duration: 20 });
         }
     });
+
+    // 전체 배경 변경
+    let bg = gsap.timeline({
+        scrollTrigger: {
+            start: 0,
+            end: "max",
+            scrub: true
+        }
+    });
+
+    bg.to("body", { "--bg-color": "#192928" });
+    bg.to("body", { "--bg-color": "#10252B" });
+    bg.to("body", { "--bg-color": "#08212F" });
 }

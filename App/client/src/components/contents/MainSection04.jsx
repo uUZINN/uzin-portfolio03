@@ -13,7 +13,7 @@ const MainSection04 = () => {
                     <CommentArea />
                 </div>
                 <div className="contact_profile">
-                    <a href='mailto:dbwls9038@naver.com'><img src={profile} alt="" /></a>
+                    <a href='mailto:dbwls9038@naver.com'><img src={profile} alt="" aria-hidden="true" /></a>
                 </div>
             </div>
         </section>

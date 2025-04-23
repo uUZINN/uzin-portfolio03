@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import draw01 from '../../assets/img/draw01.png';
 import draw02 from '../../assets/img/draw02.png';
@@ -7,9 +7,10 @@ import port02 from '../../assets/img/port02.png';
 import port03 from '../../assets/img/port03.png';
 import port04 from '../../assets/img/port04.png';
 import port05 from '../../assets/img/port05.png';
-import mobile01 from '../../assets/img/mobile01.png';
-import mobile02 from '../../assets/img/mobile02.png';
-import macbook from '../../assets/img/Macbook.png';
+import { work } from '../../assets/js/work';
+import { typing } from '../../assets/js/typing';
+import imagesLoaded from 'imagesloaded';
+
 
 const MainSection01 = () => {
 
@@ -27,6 +28,15 @@ const MainSection01 = () => {
             });
         });
     };
+
+    useEffect(() => {
+        const container = document.getElementById('mainSection')
+
+        imagesLoaded(container, { background: true }, () => {
+            work()
+            typing()
+        })
+    }, [])
 
     return (
         <section id="mainSection" className="cont_container">
@@ -53,7 +63,7 @@ const MainSection01 = () => {
                         <li>PLANNING</li>
                         <li>MARKETING</li>
                     </ul>
-                    <img className="draw_tall parallax__item__desc" src={draw01} alt="" />
+                    <img className="draw_tall parallax__item__desc" src={draw01} alt="" aria-hidden="true" />
                     <ul>
                         <span className="en2">ATTRIBUTE SCORES</span>
                         <li>WEB DEVELOP</li>
@@ -103,7 +113,7 @@ const MainSection01 = () => {
                                     {/* <Link to="https://github.com/uUZINN/vue-project2023" target="_blank" className="ko">code</Link> */}
                                 </div>
                             </div>
-                            <img src={port01} alt="" />
+                            <img src={port01} alt="" aria-hidden="true" />
                         </div>
                     </div>
                     <div className="work s2">
@@ -125,7 +135,7 @@ const MainSection01 = () => {
                                     {/* <Link to="https://github.com/uUZINN/gogyobok-blogSite" target="_blank" className="ko">code</Link> */}
                                 </div>
                             </div>
-                            <img src={port02} alt="" />
+                            <img src={port02} alt="" aria-hidden="true" />
                         </div>
                     </div>
                     <div className="work s3">
@@ -146,7 +156,7 @@ const MainSection01 = () => {
                                     {/* <Link to="https://github.com/uUZINN/movie-project" target="_blank" className="ko">code</Link> */}
                                 </div>
                             </div>
-                            <img src={port03} alt="" />
+                            <img src={port03} alt="" aria-hidden="true" />
                         </div>
                     </div>
                     <div className="work s4">
@@ -167,7 +177,7 @@ const MainSection01 = () => {
                                     {/* <Link to="https://github.com/uUZINN/youtube-project" target="_blank" className="ko">code</Link> */}
                                 </div>
                             </div>
-                            <img src={port04} alt="" />
+                            <img src={port04} alt="" aria-hidden="true" />
                         </div>
                     </div>
                     <div className="work s5">
@@ -189,7 +199,7 @@ const MainSection01 = () => {
                                     {/* <Link to="https://github.com/uUZINN/dating-quizSite" target="_blank" className="ko">code</Link> */}
                                 </div>
                             </div>
-                            <img src={port05} alt="" />
+                            <img src={port05} alt="" aria-hidden="true" />
                         </div>
                     </div>
                 </div>
@@ -214,31 +224,21 @@ const MainSection01 = () => {
                         CREATING MEMORABLE
                         SITES WITH YOU
                     </h3>
-                    <img className="parallax__item__bike" src={draw02} alt="" />
+                    <img className="parallax__item__bike" src={draw02} alt="" aria-hidden="true" />
                     <h3 className='split'>& TAILORED WEBSITES.</h3>
                     <p className='split'>ALWAYS BESPOKE. NEVER OFF-THE-SHELF.</p>
                 </div>
             </div>
             {/* <!-- // main_bike --> */}
 
-            <div className="main_mobile">
-                <div className="mobile_ani">
-                    <div className="mobile01">
-                        <img className="i1" src={mobile02} alt="" />
-                    </div>
-                    <div className="macbook">
-                        <img className="i2" src={macbook} alt="" />
-                    </div>
-                    <div className="mobile02">
-                        <img className="i3" src={mobile01} alt="" />
-                    </div>
-                </div>
 
-            </div>
-            {/* <!-- // main_mobile --> */}
 
         </section>
+
+
     )
+
+
 }
 
 export default MainSection01

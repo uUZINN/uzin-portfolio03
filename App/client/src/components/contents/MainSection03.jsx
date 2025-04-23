@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import circle01 from '../../assets/img/circle01.png';
 import circle02 from '../../assets/img/circle02.png';
@@ -21,10 +21,22 @@ import work04 from '../../assets/img/work04.png';
 import work05 from '../../assets/img/work05.png';
 import work06 from '../../assets/img/work06.png';
 
+import { circle } from '../../assets/js/circle';
+import imagesLoaded from 'imagesloaded';
+
 
 const MainSection03 = () => {
+
+    useEffect(() => {
+        const target = document.getElementById('mainSection3')
+
+        imagesLoaded(target, { background: true }, () => {
+            circle()
+        })
+    }, [])
+
     return (
-        <section id="mainSection" className="cont_container mainSection_03">
+        <section id="mainSection3" className="cont_container mainSection_03">
             <div className="main_text02">
                 <h3 className='split'>
                     <span>A frontend developer el-</span>
@@ -43,22 +55,22 @@ const MainSection03 = () => {
                     <div className="circle_cont">
                         <div className="circle">
                             <div className="parallax__item__img c1">
-                                <img src={circle01} alt="" />
+                                <img src={circle01} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c2">
-                                <img src={circle02} alt="" />
+                                <img src={circle02} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c3">
-                                <img src={circle03} alt="" />
+                                <img src={circle03} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c4">
-                                <img src={circle04} alt="" />
+                                <img src={circle04} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c5">
-                                <img src={circle05} alt="" />
+                                <img src={circle05} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c6">
-                                <img src={circle06} alt="" />
+                                <img src={circle06} alt="" aria-hidden="true" />
                             </div>
                         </div>
                     </div>
@@ -66,22 +78,22 @@ const MainSection03 = () => {
                     <div className="circle_cont">
                         <div className="blue_circle">
                             <div className="parallax__item__img c1">
-                                <img src={blueCircle01} alt="" />
+                                <img src={blueCircle01} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c2">
-                                <img src={blueCircle02} alt="" />
+                                <img src={blueCircle02} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c3">
-                                <img src={blueCircle03} alt="" />
+                                <img src={blueCircle03} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c4">
-                                <img src={blueCircle04} alt="" />
+                                <img src={blueCircle04} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c5">
-                                <img src={blueCircle05} alt="" />
+                                <img src={blueCircle05} alt="" aria-hidden="true" />
                             </div>
                             <div className="parallax__item__img c6">
-                                <img src={blueCircle06} alt="" />
+                                <img src={blueCircle06} alt="" aria-hidden="true" />
                             </div>
                         </div>
                     </div>
@@ -97,7 +109,7 @@ const MainSection03 = () => {
                             다양한 메소드를 사용하여 여러 형태의 검색 기능을 구현하였습니다.
                         </p>
                         <Link to="https://uuzinn.github.io/webs2024/javascript/search/index.html" target="_blank"><img
-                            src={work01} alt="" /></Link>
+                            src={work01} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
                             <li>THREE.JS</li>
@@ -112,7 +124,7 @@ const MainSection03 = () => {
                             애니메이션을 연습해보았습니다.
                         </p>
                         <Link to="https://uuzinn.github.io/webs2024/javascript/gsap/gsap01.html" target="_blank"><img
-                            src={work02} alt="" /></Link>
+                            src={work02} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
                             <li>GSAP&nbsp;&nbsp;Lenis</li>
@@ -126,7 +138,7 @@ const MainSection03 = () => {
                             fadeIn / fadeOut, 상하 또는 좌우로 움직이는 효과를 구현하였습니다.
                         </p>
                         <Link to="https://uuzinn.github.io/webs2024/javascript/slider/slider01.html" target="_blank"><img
-                            src={work04} alt="" /></Link>
+                            src={work04} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
                             <li>jquery&nbsp;&nbsp;JAVASCRIPT</li>
@@ -141,7 +153,7 @@ const MainSection03 = () => {
                             다양한 효과를 구현하였습니다.
                         </p>
                         <Link to="https://uuzinn.github.io/webs2024/javascript/mouse/mouse01.html" target="_blank"><img
-                            src={work06} alt="" /></Link>
+                            src={work06} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
                             <li>GSAP</li>
@@ -155,7 +167,7 @@ const MainSection03 = () => {
                             여러가지 메소드를 사용하여 객관식, 주관식, 4지선다형 등 다양한 형식으로 연습하였습니다.
                         </p>
                         <Link to="https://uuzinn.github.io/webs2024/javascript/quiz/quizEffect01.html"
-                            target="_blank"><img src={work03} alt="" /></Link>
+                            target="_blank"><img src={work03} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
                             <li>JSON</li>
@@ -169,7 +181,7 @@ const MainSection03 = () => {
                             회원가입, 로그인, 게시판, 블로그 등 기본적인 기능을 구현하였습니다.
                         </p>
                         <Link to="http://uzin4916.dothome.co.kr/php/board/board.php" target="_blank"><img
-                            src={work05} alt="" /></Link>
+                            src={work05} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
                             <li>php&nbsp;&nbsp;phpmyadmin&nbsp;&nbsp;mysql</li>

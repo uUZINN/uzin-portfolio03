@@ -49,11 +49,11 @@ const MenuLink = ({ data, index }) => {
             return (
               <div key={index} className={styles.container}>
                 <div className={styles.imageContainer}>
-                  <img src={`${images[0]}`} fill alt="image" />
+                  <img src={`${images[0]}`} fill alt="" aria-hidden="true" />
                 </div>
                 <p>{description}</p>
                 <div className={styles.imageContainer}>
-                  <img src={`${images[1]}`} fill alt="image" />
+                  <img src={`${images[1]}`} fill alt="" aria-hidden="true" />
                 </div>
                 <p>{description}</p>
               </div>

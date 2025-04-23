@@ -14,7 +14,7 @@ export function work() {
         duration: 0.1,
         scrollTrigger: {
             trigger: ".parallax__item__bike",
-            start: "top-=700",
+            start: "top-=200",
             end: "bottom",
             scrub: true,
         }
@@ -35,34 +35,34 @@ export function work() {
         });
     });
 
-    const ani2 = gsap.timeline();
-    ani2.from(".mobile_ani .i2", { y: -200, autoAlpha: 0, borderRadius: 200 })
-        .from(".mobile_ani .i1", { y: 200, autoAlpha: 0, borderRadius: 200 })
-        .from(".mobile_ani .i3", { y: -200, autoAlpha: 0, borderRadius: 200 })
-
-    ScrollTrigger.create({
-        animation: ani2,
-        trigger: ".main_mobile",
-        start: "top top",
-        end: "+=2000",
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-    });
 
 
-    // 전체 배경 변경
-    let bg = gsap.timeline({
-        scrollTrigger: {
-            start: 0,
-            end: "max",
-            scrub: true
-        }
-    });
 
-    bg.to("body", { "--bg-color": "#192928" });
-    bg.to("body", { "--bg-color": "#10252B" });
-    bg.to("body", { "--bg-color": "#08212F" });
 
 }
+// export function timeLine() {
+//     gsap.registerPlugin(ScrollTrigger);
+//     ScrollTrigger.normalizeScroll({
+//         allowNestedScroll: true
+//     });
 
+
+//     const ani2 = gsap.timeline();
+//     ani2.from(".mobile_ani .i2", { y: -200, autoAlpha: 0, borderRadius: 200 })
+//         .from(".mobile_ani .i1", { y: 200, autoAlpha: 0, borderRadius: 200 })
+//         .from(".mobile_ani .i3", { y: -200, autoAlpha: 0, borderRadius: 200 })
+
+//     ScrollTrigger.create({
+//         animation: ani2,
+//         trigger: "#mainMobile",
+//         start: "top top",
+//         end: "+=2000",
+//         scrub: true,
+//         pin: true,
+//         markers: true,
+//         anticipatePin: 1,
+//     });
+
+
+
+// }

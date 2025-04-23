@@ -44,19 +44,19 @@ const CommentContent = (props) => {
             commentId: props.comment._id,
         }
         axios.post("/api/comment/edit", body)
-        .then((response) => {
-            if (response.data.success) {
-                alert("댓글 수정이 완료되었습니다.");
-                props.comment.comment = comment;
-            } else {
-                alert("댓글 수정이 실패하였습니다.");
-            }
-            setEditFlag(false); 
-            setModalFlag(false); 
-        })
-        .catch((error) => {
-            console.error("댓글 수정 요청 실패:", error);
-        });
+            .then((response) => {
+                if (response.data.success) {
+                    alert("댓글 수정이 완료되었습니다.");
+                    props.comment.comment = comment;
+                } else {
+                    alert("댓글 수정이 실패하였습니다.");
+                }
+                setEditFlag(false);
+                setModalFlag(false);
+            })
+            .catch((error) => {
+                console.error("댓글 수정 요청 실패:", error);
+            });
         // axios.post("/api/comment/edit", body).then((response) => {
         //     if (response.data.success) {
         //         alert("댓글 수정이 완료되었습니다.");
@@ -68,36 +68,36 @@ const CommentContent = (props) => {
     }
 
     const DeleteHandler = (e) => {
-    e.preventDefault();
-    const enteredPassword = prompt('비밀번호를 입력해주세요:');
-    if (enteredPassword === props.comment.password) {
-        if (window.confirm('정말로 삭제하시겠습니까?')) {
-            let body = {
-                comment: comment,
-                nickName: nickName,
-                password: password,
-                commentId: props.comment._id,
-            };
+        e.preventDefault();
+        const enteredPassword = prompt('비밀번호를 입력해주세요:');
+        if (enteredPassword === props.comment.password) {
+            if (window.confirm('정말로 삭제하시겠습니까?')) {
+                let body = {
+                    comment: comment,
+                    nickName: nickName,
+                    password: password,
+                    commentId: props.comment._id,
+                };
 
-            axios
-                .post('/api/comment/delete', body)
-                .then((response) => {
-                    if (response.data.success) {
-                        alert('댓글이 삭제되었습니다.');
-                        // window.location.reload();
-                        props.comment.comment = comment;
-                    }
-                })
-                .catch((err) => {
-                    console.log(err);
-                    alert('댓글 삭제 실패');
-                });
+                axios
+                    .post('/api/comment/delete', body)
+                    .then((response) => {
+                        if (response.data.success) {
+                            alert('댓글이 삭제되었습니다.');
+                            // window.location.reload();
+                            props.comment.comment = comment;
+                        }
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                        alert('댓글 삭제 실패');
+                    });
+            }
+        } else {
+            alert('비밀번호가 일치하지 않습니다.');
+            setEditFlag(false);
         }
-    } else {
-        alert('비밀번호가 일치하지 않습니다.');
-        setEditFlag(false);
-    }
-};
+    };
 
     return (
         <div className="comment_view ko">
@@ -132,7 +132,7 @@ const CommentContent = (props) => {
                     )}
 
                     <div className='comment_toggle'>
-                        <span onClick={() => setModalFlag(true)}><img src={commentToggle} alt='' /></span>
+                        <span onClick={() => setModalFlag(true)}><img src={commentToggle} alt='' aria-hidden="true" /></span>
                         {modalFlag && (
                             <div className='view_list' ref={ref}>
                                 <button

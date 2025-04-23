@@ -10,13 +10,8 @@ window.addEventListener("load", function () {
 
 
 
-    smooth();
-    circle();
-    setFlowBanner();
     link();
-    work();
 
-    typing();
 
 
     requestAnimationFrame(() => {

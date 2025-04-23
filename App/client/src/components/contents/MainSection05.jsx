@@ -29,8 +29,8 @@ const MainSection05 = () => {
                     </div>
                 </div>
                 <div className="infor_right">
-                    <img className="bike_img" src={draw02Blue} alt="" />
-                    <img className="foot_logo" src={footLogoBlue} alt="" />
+                    <img className="bike_img" src={draw02Blue} alt="" aria-hidden="true" />
+                    <img className="foot_logo" src={footLogoBlue} alt="" aria-hidden="true" />
                 </div>
             </div>
         </section>

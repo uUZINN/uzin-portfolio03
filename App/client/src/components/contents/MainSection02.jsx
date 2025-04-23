@@ -2,13 +2,25 @@ import React from 'react'
 import yellowBg from '../../assets/img/main_yellow_bg-min.jpg';
 import iconF from '../../assets/img/icon_f.png';
 // import iconB from '../../assets/img/icon_d.png';
+import { useEffect } from 'react'
+import { work } from '../../assets/js/work'
+import { typing } from '../../assets/js/typing'
+import imagesLoaded from 'imagesloaded'
 
 const MainSection02 = () => {
+    useEffect(() => {
+        const container2 = document.getElementById('mainSection2')
+
+        imagesLoaded(container2, { background: true }, () => {
+            work()
+            typing()
+        })
+    }, [])
     return (
-        <section id="mainSection">
+        <section id="mainSection2">
             <div className="main_career">
                 <div className="career_bg parallax__item__desc">
-                    <img src={yellowBg} alt="" />
+                    <img src={yellowBg} alt="" aria-hidden="true" />
                 </div>
 
                 <div className="career_first parallax__item__desc">
@@ -22,19 +34,19 @@ const MainSection02 = () => {
                 <div className="career_second parallax__item__desc">
                     <div className="career_cont">
                         <div className="career_icon .donate-crypto-box">
-                            <div class="coin">
-                                <div class="coin-face">
-                                    <img src={iconF} alt="" className="icon_f" />
+                            <div className="coin">
+                                <div className="coin-face">
+                                    <img src={iconF} alt="" aria-hidden="true" className="icon_f" />
                                 </div>
-                                <div class="coin-face"></div>
-                                <div class="coin-face"></div>
-                                <div class="coin-face"></div>
-                                <div class="coin-face">
-                                    <img src={iconF} alt="" className="icon_f" />
+                                <div className="coin-face"></div>
+                                <div className="coin-face"></div>
+                                <div className="coin-face"></div>
+                                <div className="coin-face">
+                                    <img src={iconF} alt="" aria-hidden="true" className="icon_f" />
                                 </div>
                             </div>
-                            {/* <img src={iconF} alt="" className="icon_f" /> */}
-                            {/* <img src="assets/img/icon_d.png" alt="" className="icon_d blind" /> */}
+                            {/* <img src={iconF} alt="" aria-hidden="true" className="icon_f" /> */}
+                            {/* <img src="assets/img/icon_d.png" alt="" aria-hidden="true" className="icon_d blind" /> */}
                         </div>
                         <div className="career_list">
                             <div className="stack">

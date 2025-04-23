@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { setFlowBanner } from '../../assets/js/setFlowBanner'
 import { Link } from 'react-router-dom'
 import mainEst from '../../assets/img/main_est.svg';
 import mainBox from '../../assets/img/main_box.svg';
 import mainBotBanner from '../../assets/img/main_bot_banner.png';
 
 const MainBottom = () => {
+    useEffect(() => {
+        setFlowBanner()
+    }, [])
     return (
         <div className="main_bottom">
             <div className="main_bottom01">
-                <img className="w50" src={mainEst} alt="" />
+                <img className="w50" src={mainEst} alt="" aria-hidden="true" />
                 <div className="flow_banner w50">
                     <ul className="list">
                         <li>frontend</li>
@@ -18,7 +22,7 @@ const MainBottom = () => {
                         <li>isastory:make</li>
                     </ul>
                 </div>
-                <img src={mainBox} alt="" />
+                <img src={mainBox} alt="" aria-hidden="true" />
             </div>
             <div className="main_bottom02">
                 <div className="main_bottom02_title">
@@ -33,7 +37,7 @@ const MainBottom = () => {
                     USER EXPERIENCES AND CRAFT INTERFACES THAT MARRY BEAUTY WITH FUNCTIONALITY.</p>
             </div>
             <div className="main_bottom03">
-                <img src={mainBotBanner} alt="" />
+                <img src={mainBotBanner} alt="" aria-hidden="true" />
                 <div className="main_bottom03_text">
                     <Link to="https://github.com/uUZINN">
                         <p>GitHub Code History</p>
