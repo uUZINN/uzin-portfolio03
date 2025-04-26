@@ -26,7 +26,7 @@ export function circle() {
     ScrollTrigger.create({
         animation: masterTimeline,
         trigger: ".circle",
-        start: "+=1000 center",
+        start: "+=2000 center",
         scrub: true,
         pin: true,
         anticipatePin: 1,
@@ -37,7 +37,7 @@ export function circle() {
     ScrollTrigger.create({
         animation: masterTimeline2,
         trigger: ".blue_circle",
-        start: "+=1000 center",
+        start: "+=2000 center",
         scrub: true,
         pin: true,
         anticipatePin: 1,
