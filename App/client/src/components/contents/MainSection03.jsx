@@ -103,89 +103,91 @@ const MainSection03 = () => {
 
                 <div className="work">
                     <div className="work_title w1">
-                        <h5>work script - search game</h5>
+                        <h5>SOLUGATE - SHIPGATE</h5>
                         <p className="ko">
-                            자바스크립트를 이용하여 검색기능을 구현한 서치게임 사이트를 제작하였습니다.
-                            다양한 메소드를 사용하여 여러 형태의 검색 기능을 구현하였습니다.
+                            사내 물류팀 전용 홈페이지의 초기 구축을 맡아 하드코딩으로 전 페이지를 제작했으며,
+                            라이브러리를 활용해 다양한 애니메이션을 구현하였습니다.
                         </p>
-                        <Link to="https://uuzinn.github.io/webs2024/javascript/search/index.html" target="_blank"><img
+                        <Link to="https://shipgate.io/" target="_blank"><img
                             src={work01} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
-                            <li>THREE.JS</li>
+                            <li>AOS&nbsp;&nbsp;GITLAB</li>
                             <li>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT</li>
                         </ul>
                     </div>
                     <div className="work_title w2">
-                        <h5>work script - gsap effect</h5>
+                        <h5>CAFE24 - BLITZWAY SHOP</h5>
                         <p className="ko">
-                            GSAP는 애니메이션 효과를 제공해 웹사이트에 부드럽고 다양한 움직임을 구현할 수 있습니다.
-                            요소들이 부드럽게 나타나거나 사라지며, 회전하거나 움직이는 등 다채로운
-                            애니메이션을 연습해보았습니다.
+                            카페24 기반 쇼핑몰 템플릿을 커스터마이징하여 제작한 프로젝트이며,
+                            기본 테마를 바탕으로 컬렉션, 네비게이션, 헤더 등 전체 UI를 새롭게 리빌드하였습니다.
                         </p>
-                        <Link to="https://uuzinn.github.io/webs2024/javascript/gsap/gsap01.html" target="_blank"><img
+                        <Link to="https://blitzwayshop.cafe24.com/" target="_blank"><img
                             src={work02} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
-                            <li>GSAP&nbsp;&nbsp;Lenis</li>
+                            <li>CAFE24 커스터마이징 (테마 구조 및 UI 리빌드)</li>
                             <li>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT</li>
+                            <li>현재 운영되지 않는 사이트로, 일부 링크 및 기능은 제한될 수 있습니다.</li>
                         </ul>
                     </div>
                     <div className="work_title w3">
-                        <h5>work script - slider effect</h5>
+                        <h5>SHOPIFY - LEWKIN APP</h5>
                         <p className="ko">
-                            제이쿼리와 자바스크립트를 이용하여 슬라이드 효과를 여러가지 형태로 연습하였습니다.
-                            fadeIn / fadeOut, 상하 또는 좌우로 움직이는 효과를 구현하였습니다.
+                            Shopify 앱인 Tapcart를 기반으로 구축된 스토어 모바일 앱을 유지보수하며,
+                            상품 및 컬렉션 데이터 커스터마이징과 기능 개선을 수행했습니다.
                         </p>
-                        <Link to="https://uuzinn.github.io/webs2024/javascript/slider/slider01.html" target="_blank"><img
+                        <Link to="https://play.google.com/store/apps/details?id=co.tapcart.app.id_rpBh8vyCX5&hl=ko" target="_blank"><img
                             src={work04} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
-                            <li>jquery&nbsp;&nbsp;JAVASCRIPT</li>
-                            <li>HTML&nbsp;&nbsp;CSS</li>
+                            <li>Shopify (Storefront API, Admin API)&nbsp;&nbsp;Tapcart (모바일 앱 제작)&nbsp;&nbsp;</li>
+                            <li>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;GraphQL</li>
                         </ul>
                     </div>
                     <div className="work_title w4">
-                        <h5>work script - mouse effect</h5>
+                        <h5>CAFE24 - BOUTIJOUR</h5>
                         <p className="ko">
-                            자바스크립트를 이용하여 마우스 효과를 연습하였습니다.
-                            mousemove, mouseenter, mouseleave, mouseover, mouseout 등의 메소드를 활용하여
-                            다양한 효과를 구현하였습니다.
+                            카페24 기반 사이트의 유지보수 업무를 맡아,
+                            이벤트 게시글 및 배너 관리, 페이지 UI 수정 작업을 진행했습니다.
                         </p>
-                        <Link to="https://uuzinn.github.io/webs2024/javascript/mouse/mouse01.html" target="_blank"><img
+                        <Link to="https://boutijour.kr/" target="_blank"><img
                             src={work06} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
-                            <li>GSAP</li>
+                            <li>카페24 기반 사이트 유지보수</li>
                             <li>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT</li>
                         </ul>
                     </div>
                     <div className="work_title w5">
-                        <h5>work script - quiz game</h5>
+                        <h5>SOLUGATE - SOLUNOTE</h5>
                         <p className="ko">
-                            자바스크립트와 json을 이용하여 다양한 퀴즈 형태의 사이트를 제작하였습니다.
-                            여러가지 메소드를 사용하여 객관식, 주관식, 4지선다형 등 다양한 형식으로 연습하였습니다.
+                            B2B 커머스 자체 개발 솔루션의 전체 페이지 퍼블리싱을 신규 구축하고,
+                            사이트 구조 설계를 담당했습니다.
                         </p>
-                        <Link to="https://uuzinn.github.io/webs2024/javascript/quiz/quizEffect01.html"
+                        <Link to="http://solugate.com/solutions/solutions_solunote"
                             target="_blank"><img src={work03} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
-                            <li>JSON</li>
-                            <li>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT</li>
+                            <li>탭, 모달, 페이지 전환 등 인터랙션 전반 구현</li>
+                            <li>HTML&nbsp;&nbsp;CSS&nbsp;&nbsp;JAVASCRIPT&nbsp;&nbsp;JQUERY</li>
+                            <li>기업용 서비스이며, 관련 소개 페이지로 이동됩니다.</li>
                         </ul>
                     </div>
                     <div className="work_title w6">
-                        <h5>work php - simple blog</h5>
+                        <h5>REACT - PORTFOLIO</h5>
                         <p className="ko">
-                            php를 이용하여 간단한 블로그 사이트를 제작하였습니다.
-                            회원가입, 로그인, 게시판, 블로그 등 기본적인 기능을 구현하였습니다.
+                            디자인부터 퍼블리싱, React 기반 프론트엔드 개발 및 Express 서버 구축까지 전체 작업을 직접 수행했습니다.
                         </p>
-                        <Link to="http://uzin4916.dothome.co.kr/php/board/board.php" target="_blank"><img
+                        <Link to="https://www.eu-zin.co.kr/" target="_blank"><img
                             src={work05} alt="" aria-hidden="true" /></Link>
                         <h5>Technology stack</h5>
                         <ul className="ko">
-                            <li>php&nbsp;&nbsp;phpmyadmin&nbsp;&nbsp;mysql</li>
-                            <li>HTML&nbsp;&nbsp;CSS</li>
+                            <li>Design&nbsp;&nbsp;:&nbsp;&nbsp;Figma</li>
+                            <li>Frontend&nbsp;&nbsp;:&nbsp;&nbsp;React, HTML, CSS, JavaScript</li>
+                            <li>Backend&nbsp;&nbsp;:&nbsp;&nbsp;Express, Node.js</li>
+                            <li>Deployment&nbsp;&nbsp;:&nbsp;&nbsp;Render</li>
+                            <li>Version Control&nbsp;&nbsp;:&nbsp;&nbsp;Git, GitHub</li>
                         </ul>
                     </div>
 

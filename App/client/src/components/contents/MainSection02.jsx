@@ -60,7 +60,7 @@ const MainSection02 = () => {
                                     <li>MONGODB&nbsp;&nbsp;&nbsp;MONGOOSE&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;&nbsp;PHPMYADMIN
                                     </li>
                                     <li>GIT&nbsp;&nbsp;&nbsp;GITHUB&nbsp;&nbsp;&nbsp;GITLAB</li>
-                                    <li>FILEZILLA&nbsp;&nbsp;&nbsp;NETLIFY</li>
+                                    <li>FILEZILLA&nbsp;&nbsp;&nbsp;NETLIFY&nbsp;&nbsp;&nbsp;RENDER</li>
                                     <li>POSTMAN&nbsp;&nbsp;&nbsp;VS
                                         CODE&nbsp;&nbsp;&nbsp;GNUBOARD&nbsp;&nbsp;&nbsp;CAFE24&nbsp;&nbsp;&nbsp;SHOPIFY</li>
                                 </ul>
@@ -70,9 +70,9 @@ const MainSection02 = () => {
                                 <ul className="ko">
                                     <li>한양여자대학교 - 니트패션디자인과 전공 <span>2017.02 ~ 2020.02 (졸업)</span></li>
                                     <li>대한섬유 - 니트 프로그래머 <span>2020.01 ~ 2020.07 (7개월)</span></li>
-                                    <li>라인컴퓨터아트학원 - 웹 퍼블리셔디자인 수료 <span>2020.08 ~ 2021.01 (졸업)</span></li>
+                                    <li>라인컴퓨터아트학원 - 웹 퍼블리셔디자인 <span>2020.08 ~ 2021.01 (수료)</span></li>
                                     <li>그리다인 - [사원] 웹 퍼블리셔 <span>2021.05 ~ 2023.07 (2년)</span></li>
-                                    <li>라인컴퓨터아트학원 - 프론트앤드 개발 수료 <span>2023.08 ~ 2024.01 (졸업)</span></li>
+                                    <li>라인컴퓨터아트학원 - 프론트앤드 개발 <span>2023.08 ~ 2024.01 (수료)</span></li>
                                     <li>솔루게이트 - [대리] 프론트엔드 개발자 <span>2024.03 ~ (재직중)</span></li>
                                     <li>Waiting for the next job</li>
                                 </ul>

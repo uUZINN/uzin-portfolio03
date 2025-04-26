@@ -158,6 +158,7 @@
     margin: 2vw 0 4vw;
     font-weight: 300;
     font-family: var(--main-ko-light);
+    letter-spacing: 0.1px;
 }
 
 .main_record .work .work_title a {
@@ -201,6 +202,8 @@
     padding: 0.7vw 0;
     border-bottom: 1px solid;
     font-family: var(--main-ko-light);
+    letter-spacing: 0.1px;
+    text-transform: none;
 }
 
 @keyframes rotateClockwise {

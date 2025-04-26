@@ -180,7 +180,7 @@ const MainSection01 = () => {
                             <img src={port04} alt="" aria-hidden="true" />
                         </div>
                     </div>
-                    <div className="work s5">
+                    {/* <div className="work s5">
                         <h4>hardcoding - solunote</h4>
                         <div className="work_desc">
                             <div className="work_txt">
@@ -196,12 +196,11 @@ const MainSection01 = () => {
                                 </p>
                                 <div className="work_btn">
                                     <Link to="http://solugate.com/solutions/solutions_solunote" target="_blank" className="ko">기업용 서비스이며, 관련 소개 페이지로 이동됩니다.</Link>
-                                    {/* <Link to="https://github.com/uUZINN/dating-quizSite" target="_blank" className="ko">code</Link> */}
                                 </div>
                             </div>
                             <img src={port05} alt="" aria-hidden="true" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* <!-- // main_work --> */}
