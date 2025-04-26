@@ -21,10 +21,19 @@ import work04 from '../../assets/img/work04.png';
 import work05 from '../../assets/img/work05.png';
 import work06 from '../../assets/img/work06.png';
 
+import { circle } from '../../assets/js/circle';
+import imagesLoaded from 'imagesloaded';
 
 
 const MainSection03 = () => {
 
+    useEffect(() => {
+        const target = document.getElementById('mainSection3')
+
+        imagesLoaded(target, { background: true }, () => {
+            circle()
+        })
+    }, [])
 
     return (
         <section id="mainSection3" className="cont_container mainSection_03">

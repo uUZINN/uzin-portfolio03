@@ -2,10 +2,19 @@ import React, { useEffect } from 'react'
 import mobile01 from '../../assets/img/mobile01.png';
 import mobile02 from '../../assets/img/mobile02.png';
 import macbook from '../../assets/img/Macbook.png';
+import { timeLine } from '../../assets/js/timeLine';
+import imagesLoaded from 'imagesloaded';
 
 
 const MainSection01One = () => {
 
+    useEffect(() => {
+        const target = document.getElementById('mainMobile')
+
+        imagesLoaded(target, { background: true }, () => {
+            timeLine()
+        })
+    }, [])
 
     return (
         <div id="mainMobile" className="main_mobile">

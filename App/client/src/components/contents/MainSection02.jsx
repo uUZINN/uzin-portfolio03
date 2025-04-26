@@ -2,8 +2,20 @@ import React from 'react'
 import yellowBg from '../../assets/img/main_yellow_bg-min.jpg';
 import iconF from '../../assets/img/icon_f.png';
 // import iconB from '../../assets/img/icon_d.png';
+import { useEffect } from 'react'
+import { work } from '../../assets/js/work'
+import { typing } from '../../assets/js/typing'
+import imagesLoaded from 'imagesloaded'
 
 const MainSection02 = () => {
+    useEffect(() => {
+        const container2 = document.getElementById('mainSection2')
+
+        imagesLoaded(container2, { background: true }, () => {
+            work()
+            typing()
+        })
+    }, [])
     return (
         <section id="mainSection2">
             <div className="main_career">

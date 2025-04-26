@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import draw01 from '../../assets/img/draw01.png';
 import draw02 from '../../assets/img/draw02.png';
@@ -7,6 +7,9 @@ import port02 from '../../assets/img/port02.png';
 import port03 from '../../assets/img/port03.png';
 import port04 from '../../assets/img/port04.png';
 import port05 from '../../assets/img/port05.png';
+import { work } from '../../assets/js/work';
+import { typing } from '../../assets/js/typing';
+import imagesLoaded from 'imagesloaded';
 
 
 const MainSection01 = () => {
@@ -26,6 +29,14 @@ const MainSection01 = () => {
         });
     };
 
+    useEffect(() => {
+        const container = document.getElementById('mainSection')
+
+        imagesLoaded(container, { background: true }, () => {
+            work()
+            typing()
+        })
+    }, [])
 
     return (
         <section id="mainSection" className="cont_container">
