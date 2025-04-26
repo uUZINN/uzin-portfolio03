@@ -7,12 +7,14 @@ import MainSection03 from '../components/contents/MainSection03'
 import MainSection04 from '../components/contents/MainSection04'
 import MainSection05 from '../components/contents/MainSection05'
 import { smooth } from '../assets/js/smooth'
+import { circle } from '../assets/js/circle'
 import Loading from '../components/header/Loading.jsx'
 import Skip from '../components/Skip.jsx'
 
 const Home = () => {
   useEffect(() => {
     smooth()
+    circle()
   }, [])
   return (
     <>
