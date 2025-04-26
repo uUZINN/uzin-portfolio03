@@ -5,7 +5,8 @@
 
 .main_career .career_bg {
     position: absolute;
-    top: 10%;
+    /* top: 10%; */
+    top: 0;
     left: 0;
     width: 100%;
     height: auto;

@@ -14,7 +14,7 @@ export function work() {
         duration: 0.1,
         scrollTrigger: {
             trigger: ".parallax__item__bike",
-            start: "top-=200",
+            start: "top-=450",
             end: "bottom",
             scrub: true,
         }
