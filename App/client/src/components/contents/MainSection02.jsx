@@ -54,7 +54,7 @@ const MainSection02 = () => {
                                 <ul className="ko">
                                     <li>JAVASCRIPT&nbsp;&nbsp;&nbsp;JQUERY&nbsp;&nbsp;&nbsp;REACT&nbsp;&nbsp;&nbsp;LIQUID&nbsp;&nbsp;&nbsp;GRAPHQL
                                     </li>
-                                    <li>HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;SCSS</li>
+                                    <li>HTML&nbsp;&nbsp;&nbsp;CSS&nbsp;&nbsp;&nbsp;SCSS&nbsp;&nbsp;&nbsp;NODE.JS&nbsp;&nbsp;&nbsp;EXPRESS</li>
                                     <li>PHOTOSHOP&nbsp;&nbsp;&nbsp;ILLUSTRATER&nbsp;&nbsp;&nbsp;ADOBE
                                         XD&nbsp;&nbsp;&nbsp;FIGMA</li>
                                     <li>MONGODB&nbsp;&nbsp;&nbsp;MONGOOSE&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;&nbsp;PHPMYADMIN
