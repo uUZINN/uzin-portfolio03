@@ -20,7 +20,7 @@
 .work_port .work {
     border-radius: 20px;
     width: 95%;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     color: #514F4E;
     text-align: center;
