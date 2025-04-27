@@ -297,7 +297,15 @@
 }
 
 
-@media (max-width: 1495px) {}
+@media (max-width: 1495px) {
+    .main_record .work .work_title ul li {
+        font-size: 0.95vw;
+    }
+
+    .main_record .work .work_title p {
+        font-size: 1vw;
+    }
+}
 
 @media(max-width: 800px) {
 

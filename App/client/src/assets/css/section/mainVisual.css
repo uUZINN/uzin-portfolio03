@@ -225,12 +225,12 @@
     align-items: center;
     background-image: url(../../img/main_bot_banner.png);
     background-position: center;
-    background-size: 100%;
+    background-size: 105%;
     transition: all 0.3s;
 }
 
 .main_bottom03:hover {
-    background-size: 110%;
+    background-size: 120%;
     /* filter: grayscale(1); */
 }
 
