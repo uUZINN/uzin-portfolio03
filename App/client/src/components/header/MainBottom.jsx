@@ -33,11 +33,13 @@ const MainBottom = () => {
                         <li><Link to="https://www.figma.com/file/L1hcYmSqFK4uU2sJLz9dx1/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4-%EC%8B%9C%EC%95%88-%EC%9E%91%EC%97%85?type=design&node-id=409%3A10&mode=design&t=qM0Ksax3QTF0fbr8-1">design</Link></li>
                     </ul>
                 </div>
-                <p className="ko">FRONT-END DEVELOPERS ARE RELLENTLESS CREATORS, CONSTANTLY EVOLVING TO ENHANCE
-                    USER EXPERIENCES AND CRAFT INTERFACES THAT MARRY BEAUTY WITH FUNCTIONALITY.</p>
+                <p className="ko">
+                    이 포트폴리오는 기획, 디자인, 프론트엔드 개발, 서버 구축 및 배포까지 전 과정을 직접 수행하여 제작했습니다.<br />
+                    This portfolio is fully designed, developed, and deployed by myself from scratch.
+                </p>
             </div>
             <div className="main_bottom03">
-                <img src={mainBotBanner} alt="" aria-hidden="true" />
+                {/* <img src={mainBotBanner} alt="" aria-hidden="true" /> */}
                 <div className="main_bottom03_text">
                     <Link to="https://github.com/uUZINN">
                         <p>GitHub Code History</p>
